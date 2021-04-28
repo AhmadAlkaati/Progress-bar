@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #2c2929;
+}
+
+main header {
+  margin-bottom: 3rem;
+}
+
+main header h1 {
+  color: burlywood;
+  letter-spacing: 5px;
+}
+
+main .fill-duration {
+  margin-bottom: 2rem;
+  display: flex;
+}
+
+main .fill-duration h1 {
+  color: white;
+  font-size: 30px;
+}
+
+main .fill-duration span {
+  color: white;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+main .container-progress-bar {
+  background: #c2baba;
+  height: 15px;
+  width: 80%;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+}
+
+main .container-progress-bar .progress-bar {
+  height: 100%;
+  width: 0;
+  background: #f79e02;
+}
+
+main .container-progress-bar .progress-bar.progress-bar-animation {
+  width: 100%;
+  transition: width;
+  transition-timing-function: ease;
+}
+
+main .control {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main .control .start {
+  padding: 0.7rem 1.5rem;
+  width: 100px;
+  cursor: pointer;
+  background: burlywood;
+  color: white;
+  border-radius: 5px;
+  border: none;
+}
+
+main .control .duration {
+  margin-top: 2rem;
+}
+
+main .control .duration label {
+  color: white;
+}
+
+main .control .duration select {
+  outline: none;
+  background: #494444;
+  color: white;
+}
+
+main .control .duration select option {
+  cursor: pointer;
+  outline: none;
+  font-weight: 600;
+}
+
+main .control .progress-bar-colors {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+main .control .progress-bar-colors label {
+  color: white;
+  margin-bottom: 1rem;
+}
+
+main .control .progress-bar-colors .colors .color {
+  width: 200px;
+  height: 40px;
+  margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+main .control .progress-bar-colors .colors .color:first-child {
+  background: #f79e02;
+}
+
+main .control .progress-bar-colors .colors .color:nth-child(2) {
+  background: #5cdb94;
+}
+
+main .control .progress-bar-colors .colors .color:nth-child(3) {
+  background: #05396b;
+}
+
+main .control .progress-bar-colors .colors .color:nth-child(4) {
+  background: #4f1b1d;
+}
+
+main .control .progress-bar-colors .colors .color:nth-child(5) {
+  background: #4a4b4d;
+}
+
+main .control .progress-bar-colors .colors .color:nth-child(6) {
+  background: #edc8b8;
+}
+
+main button {
+  font-family: 'Roboto', sans-serif;
+}
+
+main footer {
+  position: absolute;
+  bottom: 1rem;
+}
+
+main footer a {
+  text-decoration: none;
+  color: burlywood;
+}
+
+main footer a i {
+  margin: 0 0.2rem;
+}
+/*# sourceMappingURL=style.css.map */

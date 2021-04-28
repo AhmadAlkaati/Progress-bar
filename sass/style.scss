@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+}
+main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgb(44, 41, 41);
+  header {
+    margin-bottom: 3rem;
+    h1 {
+      color: burlywood;
+      letter-spacing: 5px;
+    }
+  }
+  .fill-duration {
+    margin-bottom: 2rem;
+    display: flex;
+
+    h1 {
+      color: white;
+      font-size: 30px;
+    }
+    span {
+      color: white;
+      font-size: 30px;
+      font-weight: 600;
+    }
+  }
+  .container-progress-bar {
+    background: rgb(194, 186, 186);
+    height: 15px;
+    width: 80%;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    .progress-bar {
+      height: 100%;
+      width: 0;
+      background: #f79e02;
+    }
+    .progress-bar.progress-bar-animation {
+      width: 100%;
+      transition: width;
+      transition-timing-function: ease;
+    }
+  }
+  .control {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .start {
+      padding: 0.7rem 1.5rem;
+      width: 100px;
+      cursor: pointer;
+      background: burlywood;
+      color: white;
+      border-radius: 5px;
+      border: none;
+    }
+    .duration {
+      margin-top: 2rem;
+      label {
+        color: white;
+      }
+      select {
+        outline: none;
+        background: rgb(73, 68, 68);
+        color: white;
+        option {
+          cursor: pointer;
+          outline: none;
+          font-weight: 600;
+        }
+      }
+    }
+    .progress-bar-colors {
+      display: flex;
+      flex-direction: column;
+      margin-top: 2rem;
+      label {
+        color: white;
+        margin-bottom: 1rem;
+      }
+      .colors {
+        .color {
+          width: 200px;
+          height: 40px;
+          margin-bottom: 0.5rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+          &:first-child {
+            background: #f79e02;
+          }
+          &:nth-child(2) {
+            background: #5cdb94;
+          }
+
+          &:nth-child(3) {
+            background: #05396b;
+          }
+          &:nth-child(4) {
+            background: #4f1b1d;
+          }
+          &:nth-child(5) {
+            background: #4a4b4d;
+          }
+          &:nth-child(6) {
+            background: #edc8b8;
+          }
+        }
+      }
+    }
+  }
+
+  button {
+    font-family: 'Roboto', sans-serif;
+  }
+  footer {
+    position: absolute;
+    bottom: 1rem;
+    a {
+      text-decoration: none;
+      color: burlywood;
+      i {
+        margin: 0 0.2rem;
+      }
+    }
+  }
+}
